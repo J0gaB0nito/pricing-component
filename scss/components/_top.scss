@@ -1,0 +1,42 @@
+// TOP SECTION
+
+.textbox {
+    position: relative;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    .circles {
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: -1;
+        height: 175px;
+
+        @include media {
+            height: 150px;
+        }
+    }
+    
+    &__primary {
+        text-align: center;
+        padding-bottom: 1rem;
+        font-size: 1.8rem;
+        font-weight: 800;
+        color: color('dark desaturated blue');
+    }
+
+    &__secondary {
+        text-align: center;
+        margin: 0 auto;
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+
+    @include media {
+        &__break {
+            display: none;
+        }
+    } 
+}

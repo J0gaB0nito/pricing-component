@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/main.css">
+  <script src="./js/main.js" defer></script>
+
+  <title>Frontend Mentor | Interactive pricing component</title>
+  
+</head>
+<body>
+  
+  <div class="textbox">
+    <img src="./images/pattern-circles.svg" alt="" class="circles">
+    <h1 class="textbox__primary">Simple, traffic-based pricing</h1>
+    <p class="textbox__secondary">Sign-up for our 30-day trial. <br class="textbox__break">No credit card required.</p>
+  </div>
+
+  <div class="card">
+    <div class="wrapper">
+      <div class="pricing">
+        
+        <p class="range__label">100k pageviews</p>
+        <input name="range" type="range" min="1" max="5" value="3" step="1" class="range">
+        <p class="price"><span class="price__bold">$16.00</span><span class="price__light"> / month</span></p>
+        
+        <div class="billing">
+          <p class="billing__text">Monthly Billing</p>
+          <label class="switch__label">
+            <input type="checkbox" name="switch" class="switch" >
+            <span class="span"></span>
+          </label>
+          <p class="billing__text">Yearly Billing<span class="billing__discount billing__discount-small">-25%</span><span class="billing__discount billing__discount-big">-25% discount</span></p>
+        </div>
+      </div>
+
+      <div class="features">
+        <ul class="features__list">
+          <li class="features__item"><img class="features__icon" src="images/icon-check.svg"> Unlimited websites</li>
+          <li class="features__item"><img class="features__icon" src="images/icon-check.svg"> 100% data ownership</li>
+          <li class="features__item"><img class="features__icon" src="images/icon-check.svg"> Email reports</li>
+        </ul>
+        <button class="btn">Start my trial</button>
+      </div>
+      
+    </div>
+  </div>
+
+  <div class="attribution">
+    <p>
+      Challenge by <a class="link" href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor</a>.
+    Coded by <a class="link" href="mailto:arek.tywonek@gmail.com" > Arek Tywonek</a>.
+    </p>
+  </div>
+</body>
+</html>

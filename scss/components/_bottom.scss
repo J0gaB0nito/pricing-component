@@ -1,0 +1,94 @@
+// BOTTOM SECTION
+
+.features {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9rem;
+    padding-top: 36px;
+    align-items: center;
+
+    &::before {
+        content: '';
+        position: absolute;
+        width: calc(100% + #{$card-padding*2});
+        height: 1px;
+        top: 0;
+        left: -$card-padding;
+        background-color: color('superlight grayish blue');
+    }
+
+    @include media {
+        &{
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+    &__list {
+        margin-bottom: 24px;
+
+        @include media {
+            margin: 0;
+        }
+    }
+
+    &__item {
+        list-style: none;
+        padding-bottom: 16px;
+
+        @include media {
+            &{
+                padding: 6px 0 ;
+                text-align: left;
+            }
+        }
+    }
+
+    &__icon {
+        margin-right: 16px;
+        width: 0.7rem;
+        vertical-align: middle;
+    }
+}
+
+.btn {
+    width: 210px;
+    height: 50px;
+    font-size: 0.9rem;
+    letter-spacing: 1px;
+    font-weight: 600;
+    border-radius: 25px;
+    background-color: color('dark desaturated blue');
+    color: color('pale blue');
+    border: none;
+    cursor: pointer;
+    text-align: center;
+
+    &:hover {
+        color: color('very pale blue');
+    }
+}
+
+.attribution {
+    display: flex;
+    align-items: center;
+    height: 100px;
+    color:hsl(200, 70%, 30%);
+    font-size: 0.75rem;
+}
+
+.link {
+    transition: color .3s;
+    text-decoration: none;
+    color:hsl(350, 75%, 45%);
+
+    &:link, &:visited, &:active {
+        color:hsl(350, 75%, 45%);
+    }
+
+    &:hover {
+        color:hsl(350, 75%, 60%);
+    }
+}
+
